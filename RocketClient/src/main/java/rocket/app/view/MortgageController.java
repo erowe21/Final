@@ -53,10 +53,7 @@ public class MortgageController {
 	private Label labelError;
 	@FXML
 	private Button btnCalcPayment;
-	ObservableList<String> listComboBox = FXCollections.observableArrayList("15 Years","30 Years");
-	@FXML
-	private ComboBox cmbTerm;
-	
+
 	public void initialize(URL location, ResourceBundle resources){
 		cmbTerm.getItems().removeAll(cmbTerm.getItems()));
 		cmbTerm.getItems().addAll("15 Years", "30 Years");
